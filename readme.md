@@ -137,7 +137,7 @@ Include the `plyr.js` script before the closing `</body>` tag and then call `ply
 If you want to use our CDN (provided by [Fastly](https://www.fastly.com/)) for the JavaScript, you can use the following:
 
 ```html
-<script src="https://cdn.plyr.io/2.0.11/plyr.js"></script>
+<script src="https://cdn.plyr.io/2.0.12/plyr.js"></script>
 ```
 
 ### CSS
@@ -150,11 +150,11 @@ Include the `plyr.css` stylsheet into your `<head>`
 If you want to use our CDN (provided by [Fastly](https://www.fastly.com/)) for the default CSS, you can use the following:
 
 ```html
-<link rel="stylesheet" href="https://cdn.plyr.io/2.0.11/plyr.css">
+<link rel="stylesheet" href="https://cdn.plyr.io/2.0.12/plyr.css">
 ```
 
 ### SVG Sprite
-The SVG sprite is loaded automatically from our CDN (provided by [Fastly](https://www.fastly.com/)). To change this, see the [options](#options) below. For reference, the CDN hosted SVG sprite can be found at `https://cdn.plyr.io/2.0.11/plyr.svg`.
+The SVG sprite is loaded automatically from our CDN (provided by [Fastly](https://www.fastly.com/)). To change this, see the [options](#options) below. For reference, the CDN hosted SVG sprite can be found at `https://cdn.plyr.io/2.0.12/plyr.svg`.
 
 ## Advanced
 
@@ -285,6 +285,12 @@ Note the single quotes encapsulating the JSON and double quotes on the object ke
       <td>String</td>
       <td><code>plyr</code></td>
       <td>Specify the id prefix for the icons used in the default controls (e.g. "plyr-play" would be "plyr"). This is to prevent clashes if you're using your own SVG sprite but with the default controls. Most people can ignore this option.</td>
+    </tr>
+    <tr>
+      <td><code>blankUrl</code></td>
+      <td>String</td>
+      <td><code>https://cdn.selz.com/plyr/blank.mp4</code></td>
+      <td>Specify a URL or path to a blank video file used to properly cancel network requests. See <a href="https://github.com/Selz/plyr/issues/174">issue #174</a> for more info.</td>
     </tr>
     <tr>
       <td><code>debug</code></td>
